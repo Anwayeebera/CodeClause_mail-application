@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(to bottom, #d4fc79, #96e6a1);
+    height: 100vh;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.navbar img.mail-icon {
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: rgb(16, 16, 16);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    width: 100%;
+    position: relative;
+}
+
+.navbar a i {
+    position: absolute;
+    left: 40px;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ee9ca7;
+}
+
+.mail-icon {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    margin-left: 220px;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+}
+
+.container h2 {
+    color: #8ac6d1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 20px 0;
+    color: #777;
+}
+
+.container .highlight {
+    color: #ee9ca7;
+    font-weight: 700;
+    background: #fff8f8;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Header Styles */
+h2 {
+    color: #8ac6d1;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #e870a0, #F6BED6);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(to right, #F6BED6,#e870a0);
+}
+
+/* Email List Styles */
+.email-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.email-list li {
+    background: linear-gradient(to right, #f9f9f9, #e3e3e3);
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.email-list li:hover {
+    background: linear-gradient(to right, #e3e3e3, #f9f9f9);
+    transform: translateY(-3px);
+}
+
+.email-list li strong {
+    display: block;
+    color: #8ac6d1;
+    margin-bottom: 5px;
+}
+
+/* Alignments */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.flex-container .content {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #ee9ca7;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+/* Dashboard Links */
+.dashboard-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.dashboard-links a {
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: background 0.3s, color 0.3s;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.dashboard-links a:hover {
+    background: #ee9ca7;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 5px;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
